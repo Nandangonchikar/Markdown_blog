@@ -7,7 +7,7 @@ const Article=require('./models/article');
 app.set('view engine','ejs');
 app.use(express.urlencoded({extended:false}));
 
-const connection_string="mongodb+srv://admin:admin@cluster0.rdcsmua.mongodb.net/?retryWrites=true&w=majority"
+const connection_string="connection_string"
 try{
     mongoose.connect(connection_string,{useNewUrlParser:true,useUnifiedTopology:true});
 }catch(error){
